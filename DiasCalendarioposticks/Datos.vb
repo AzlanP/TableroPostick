@@ -48,6 +48,27 @@ Public Class Datos
         Desconectar()
 
     End Sub
+    Public Function BuscarPostick(ByVal id As Integer) As plantillaPostick
+        conectar()
+        Dim sql As String = "select * from TablaPostick where (IDPostick= '" & id & "')"
+        Dim comando As New SQLiteCommand(sql, con)
+        Dim da As New SQLiteDataAdapter
+        Dim dt As New DataTable
+        da.SelectCommand = comando
+        da.Fill(dt)
+
+        Dim oPostick As New plantillaPostick
+        oPostick.IDPostick = dt.Rows(0)(0)
+        oPostick.Titulo = dt.Rows(0)(1)
+
+        oPostick.Descripcion = dt.Rows(0)(2)
+
+        oPostick.Fecha = dt.Rows(0)(3)
+        Desconectar()
+
+
+        Return oPostick
+    End Function
     Public Function ConsultarUltimoID() As Integer
         conectar()
         Try

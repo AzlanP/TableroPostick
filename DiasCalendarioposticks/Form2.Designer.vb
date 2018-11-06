@@ -69,14 +69,15 @@ Partial Class Form2
         Me.panelPostick.Controls.Add(Me.Panel2)
         Me.panelPostick.Controls.Add(Me.Panel1)
         Me.panelPostick.Location = New System.Drawing.Point(12, 144)
+        Me.panelPostick.Margin = New System.Windows.Forms.Padding(1)
         Me.panelPostick.Name = "panelPostick"
-        Me.panelPostick.Size = New System.Drawing.Size(1068, 440)
+        Me.panelPostick.Size = New System.Drawing.Size(1027, 424)
         Me.panelPostick.TabIndex = 24
         '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel7.Location = New System.Drawing.Point(914, 12)
+        Me.Panel7.Location = New System.Drawing.Point(879, 2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(140, 415)
         Me.Panel7.TabIndex = 6
@@ -84,7 +85,7 @@ Partial Class Form2
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel6.Location = New System.Drawing.Point(763, 12)
+        Me.Panel6.Location = New System.Drawing.Point(733, 2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(140, 415)
         Me.Panel6.TabIndex = 5
@@ -92,7 +93,7 @@ Partial Class Form2
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel5.Location = New System.Drawing.Point(612, 12)
+        Me.Panel5.Location = New System.Drawing.Point(587, 2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(140, 415)
         Me.Panel5.TabIndex = 4
@@ -100,7 +101,7 @@ Partial Class Form2
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel4.Location = New System.Drawing.Point(461, 12)
+        Me.Panel4.Location = New System.Drawing.Point(441, 2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(140, 415)
         Me.Panel4.TabIndex = 3
@@ -108,23 +109,23 @@ Partial Class Form2
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel3.Location = New System.Drawing.Point(310, 12)
+        Me.Panel3.Location = New System.Drawing.Point(295, 2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(140, 415)
         Me.Panel3.TabIndex = 2
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(159, 12)
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Location = New System.Drawing.Point(149, 2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(140, 415)
         Me.Panel2.TabIndex = 1
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(8, 12)
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Location = New System.Drawing.Point(3, 2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(140, 415)
         Me.Panel1.TabIndex = 0
@@ -152,7 +153,7 @@ Partial Class Form2
         'btnPosteriorSemana
         '
         Me.btnPosteriorSemana.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnPosteriorSemana.Location = New System.Drawing.Point(1012, 87)
+        Me.btnPosteriorSemana.Location = New System.Drawing.Point(1007, 87)
         Me.btnPosteriorSemana.Name = "btnPosteriorSemana"
         Me.btnPosteriorSemana.Size = New System.Drawing.Size(32, 53)
         Me.btnPosteriorSemana.TabIndex = 29
@@ -162,9 +163,9 @@ Partial Class Form2
         'btnAnteriorSemana
         '
         Me.btnAnteriorSemana.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnAnteriorSemana.Location = New System.Drawing.Point(17, 87)
+        Me.btnAnteriorSemana.Location = New System.Drawing.Point(12, 87)
         Me.btnAnteriorSemana.Name = "btnAnteriorSemana"
-        Me.btnAnteriorSemana.Size = New System.Drawing.Size(29, 53)
+        Me.btnAnteriorSemana.Size = New System.Drawing.Size(34, 53)
         Me.btnAnteriorSemana.TabIndex = 28
         Me.btnAnteriorSemana.Text = "<<"
         Me.btnAnteriorSemana.UseVisualStyleBackColor = False
@@ -181,14 +182,14 @@ Partial Class Form2
         Me.SemanaDias.Controls.Add(Me.Label8)
         Me.SemanaDias.Location = New System.Drawing.Point(42, 87)
         Me.SemanaDias.Name = "SemanaDias"
-        Me.SemanaDias.Size = New System.Drawing.Size(971, 53)
+        Me.SemanaDias.Size = New System.Drawing.Size(961, 53)
         Me.SemanaDias.TabIndex = 27
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(10, 17)
+        Me.Label14.Location = New System.Drawing.Point(10, 19)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(56, 15)
         Me.Label14.TabIndex = 6
@@ -198,7 +199,7 @@ Partial Class Form2
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(157, 17)
+        Me.Label13.Location = New System.Drawing.Point(154, 19)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(56, 15)
         Me.Label13.TabIndex = 5
@@ -208,7 +209,7 @@ Partial Class Form2
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(304, 17)
+        Me.Label12.Location = New System.Drawing.Point(307, 19)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(56, 15)
         Me.Label12.TabIndex = 4
@@ -218,7 +219,7 @@ Partial Class Form2
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(451, 17)
+        Me.Label11.Location = New System.Drawing.Point(462, 19)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(56, 15)
         Me.Label11.TabIndex = 3
@@ -228,7 +229,7 @@ Partial Class Form2
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(598, 17)
+        Me.Label10.Location = New System.Drawing.Point(600, 19)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(56, 15)
         Me.Label10.TabIndex = 2
@@ -238,7 +239,7 @@ Partial Class Form2
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(745, 17)
+        Me.Label9.Location = New System.Drawing.Point(749, 19)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(48, 15)
         Me.Label9.TabIndex = 1
@@ -248,7 +249,7 @@ Partial Class Form2
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(884, 17)
+        Me.Label8.Location = New System.Drawing.Point(889, 19)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(48, 15)
         Me.Label8.TabIndex = 0
@@ -258,7 +259,8 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1081, 640)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1098, 640)
         Me.Controls.Add(Me.MesesCalendario)
         Me.Controls.Add(Me.btnPosteriorSemana)
         Me.Controls.Add(Me.btnAnteriorSemana)

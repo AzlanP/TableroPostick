@@ -29,8 +29,9 @@ Partial Class Nota
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.btnGuardarNota = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.NroPostick = New System.Windows.Forms.Label()
+        Me.lblID = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtTitulo
@@ -92,31 +93,42 @@ Partial Class Nota
         Me.btnGuardarNota.Text = "Guardar"
         Me.btnGuardarNota.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnCancelar
         '
-        Me.Button1.Location = New System.Drawing.Point(170, 242)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Cancelar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCancelar.Location = New System.Drawing.Point(170, 242)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 7
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'NroPostick
         '
         Me.NroPostick.AutoSize = True
-        Me.NroPostick.Location = New System.Drawing.Point(74, 9)
+        Me.NroPostick.Location = New System.Drawing.Point(12, 9)
         Me.NroPostick.Name = "NroPostick"
-        Me.NroPostick.Size = New System.Drawing.Size(59, 13)
+        Me.NroPostick.Size = New System.Drawing.Size(71, 13)
         Me.NroPostick.TabIndex = 8
-        Me.NroPostick.Text = "NroPostick"
+        Me.NroPostick.Text = "NroPostick   :"
+        '
+        'lblID
+        '
+        Me.lblID.AutoSize = True
+        Me.lblID.Location = New System.Drawing.Point(89, 9)
+        Me.lblID.Name = "lblID"
+        Me.lblID.Size = New System.Drawing.Size(18, 13)
+        Me.lblID.TabIndex = 9
+        Me.lblID.Text = "ID"
         '
         'Nota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(296, 278)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(292, 278)
+        Me.Controls.Add(Me.lblID)
         Me.Controls.Add(Me.NroPostick)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnGuardarNota)
         Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.Label3)
@@ -137,6 +149,7 @@ Partial Class Nota
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents btnGuardarNota As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents NroPostick As System.Windows.Forms.Label
+    Friend WithEvents lblID As System.Windows.Forms.Label
 End Class

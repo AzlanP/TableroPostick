@@ -104,6 +104,8 @@ Public Class Form2
 
 
     Public Sub AcomodarPostickEnPanels()
+        ' llena un array con otro array(de posticks) ej: array semana() semana(0) =domingo() el domingo tendra 
+        '  una cantidad de posticks asi que cada dia es un array en el que se amacenara una cantidad ilimitada de posticks
         Dim ArrayDeDiasPostick(6) As Array
         Dim x As Integer = 0
         For Each dia In arrayFechasLabels
@@ -135,7 +137,7 @@ Public Class Form2
 
             PosY = i * 101
             Postick(i).Location = New Point(3, PosY)
-            'MsgBox(Postick(i).Location.X & " , " & Postick(i).Location.Y)
+
             Postick(i).BackColor = Color.Yellow
             If PosY > pcont.Size.Height Then
                 pcont.Size = New Point(135, PosY)
@@ -143,11 +145,12 @@ Public Class Form2
             pcont.Controls.Add(Postick(i))
             Dim opostick As New plantillaPostick
             opostick = parrayposticks(i)
-            Postick(i).Items.Add("Titulo:" & opostick.Titulo)
-            Postick(i).Items.Add("Descripcion:" & opostick.Descripcion)
+            Postick(i).Items.Add(opostick.IDPostick)
+            Postick(i).Items.Add("Titulo      : " & opostick.Titulo)
+            Postick(i).Items.Add("Descripcion : " & opostick.Descripcion)
             PosY = 0
+            AddHandler Postick(i).DoubleClick, AddressOf list_doubleclick
             AddHandler Postick(i).Click, AddressOf list_click
-
 
         Next
 
@@ -170,34 +173,32 @@ Public Class Form2
     End Sub
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    '---------------------------------------------------------------------------------------------------------------------------------------------------
+    '    -------------------ESTO ES PARA ABRIR LOS POSTICKS AL DARLE CLICK-----------------------------------------------------------------------------------
+    '            ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
     Private Sub list_click(ByVal sender As Object, ByVal e As EventArgs)
         'metodo para poder usar el evento click en todo el array
         'este metodo se debe cambiar para que pueda abrir las modificaciones
+        Dim olistbox As ListBox
+        olistbox = sender
+
+        olistbox.BackColor = Color.FromArgb(255, 128, 0)
+    End Sub
+    Private Sub list_doubleclick(ByVal sender As Object, ByVal e As EventArgs)
+        Dim olistbox As ListBox
+        olistbox = sender
+
         Dim OpenPostick As New Nota
+        OpenPostick.AbrirPostick(olistbox.Items.Item(0))
         OpenPostick.Show()
     End Sub
 
 
-
+    '---------------------------------------------------------------------------------------------------------------------------------------------------
+    '    --------------------AGREGAR NUEVO POSTICK-------------------------------------------------------------------------------------------
+    '            ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

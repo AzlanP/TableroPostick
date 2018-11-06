@@ -9,7 +9,7 @@
         Fecha = pFecha
 
     End Sub
-    Public Sub EliminarPostick(ByVal IDpostick)
+    Public Sub EliminarPostick(ByVal IDpostick As Integer)
 
     End Sub
 End Class
